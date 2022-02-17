@@ -11,4 +11,9 @@ public class MainMenuBehaviour : MonoBehaviour
     {
         SceneManager.LoadScene(levelName);
     }
+
+    public void RestHighScore()
+    {
+        PlayerPrefs.SetInt("highscore", 0); 
+    }
 }
